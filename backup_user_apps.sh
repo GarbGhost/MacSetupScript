@@ -223,7 +223,7 @@ write_appstore() {
   mkdir -p "$REPORT_DIR"
   local file="$REPORT_DIR/appstore.md"
   write_header "$file" "Приложения из App Store"
-  mas list 2>/dev/null | awk '{print "- " $2}' | sort >> "$file"
+  mas list 2>/dev/null | awk '{print "- " $1 " " $2}' | sort >> "$file"
 }
 
 write_brew() {
