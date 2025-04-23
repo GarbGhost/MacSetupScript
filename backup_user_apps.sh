@@ -39,8 +39,9 @@ write_visual_chart() {
       height: auto;
     }
     canvas {
-      max-width: 90%;
+      max-width: 100%;
       cursor: pointer;
+      margin-bottom: 2em;
     }
     pre {
       white-space: pre-wrap;
@@ -122,7 +123,7 @@ write_visual_chart() {
                   label: 'Количество приложений',
                   data: counts,
                   backgroundColor: ['#36A2EB', '#FFCD56', '#FF5733', '#4CAF50', '#FFB6C1'],
-                  hoverOffset: 4
+                  hoverOffset: 10
                 }]
               },
               options: {
